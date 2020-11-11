@@ -1,0 +1,43 @@
+import webbrowser
+
+
+
+# assigning links to objects
+ita = 'insert zoom link here'
+uch = 'insert zoom link here'
+fin = 'insert zoom link here'
+psy = 'insert zoom link here'
+voi = 'insert zoom link here'
+
+
+# welcome message/waiting for input
+print('Hello. What class would you like to attend? Existing classes:')
+print(' ')
+print('ita - Advanced Italian I')
+print('uch - University Choir')
+print('fin - Intro to Financial Management')
+print('psy - Elementary Psychology')
+print('voi - Voice Lesson')
+print('.')
+print('.')
+print('.')   # these periods ('.') are to create spacing on menu
+print('.')
+print('.')
+print('.')
+print('Created by Scott G. on 11/11/2020')
+
+myClass = input()   # turns the input into an object & evaluates it below
+
+
+if myClass == 'ita':
+    webbrowser.open(ita)  # Go to Advanced Italian I zoom meeting
+if myClass == 'uch':
+    webbrowser.open(uch) # go to uchoir zoom meeting
+if myClass == 'fin':
+    webbrowser.open(fin)  # Go to intro to financial management zoom meeting
+if myClass == 'psy':
+    webbrowser.open(psy) # go to elementary psych zoom meeting
+if myClass == 'voi':
+    webbrowser.open(voi) # go to voice lesson zoom meeting
+else:
+    print('See ya!')
